@@ -1,5 +1,5 @@
 % https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-% https://ru.wikipedia.org/wiki/Жизнь_(клеточный_автомат)
+% https://ru.wikipedia.org/wiki/РРіСЂР°_В«Р–РёР·РЅСЊВ»
 % Task : game state is set to a list of live cells(live(x, y)). Need to restore any suitable previous state
 % gameR([life(2, 1), life(2, 2)], Ans)
 % Ans / [life(1, 1), life(2, 2), life(3, 1)]
