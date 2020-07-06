@@ -1,6 +1,7 @@
 % game_set
 
-% https://ru.wikipedia.org/wiki/Сет_(игра)
+% https://en.wikipedia.org/wiki/Set_(card_game)
+% https://ru.wikipedia.org/wiki/РЎРµС‚_(РёРіСЂР°)
 
 % find_sets([card(red, oval, one, solid), card(green, oval, two, open), card(red, diamond, two, solid), card(purple, squiggle, two, striped), card(green, squiggle, three, open)], Sets)
 
