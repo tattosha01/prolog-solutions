@@ -1,4 +1,4 @@
-% https://ru.wikipedia.org/wiki/Города_(игра)
+% https://ru.wikipedia.org/wiki/Р“РѕСЂРѕРґР°_(РёРіСЂР°)
 
 % Task : find the shortest sequence of cities in the list 'Ds'. Start_city : 'S'. Finish_city : 'E'. Answer : 'Ans'
 
