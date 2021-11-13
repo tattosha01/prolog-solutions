@@ -53,24 +53,24 @@ dfs(V) :-
   assert(color(V, C)),
   for_dfs(L).
 
-% [H | T] - list of vertex for start DFS
+% [H | T] - list of vertex for start DFS;
 for_dfs([]) :- !.
 for_dfs([H | T]) :-
   dfs(H), 
   for_dfs(T).
 
-% L: List of colors in [H | T] (vertexes)
+% L: List of colors in [H | T] (vertexes);
 colors_from_vertexes([], []) :- !.
 colors_from_vertexes([H | T], L) :-
   color(H, C),
   colors_from_vertexes(T, L1),
   L = [C | L1].
 
-% Color - MEX of List
+% Color - MEX of List;
 allow_color(List, Color) :- 
   brute_force(List, Color, 1).
 
-% Tries to substitute the minimum C
+% Tries to substitute the minimum C;
 brute_force(List, Color, C) :-
   not(member(C, List)), !,
   Color is C.
