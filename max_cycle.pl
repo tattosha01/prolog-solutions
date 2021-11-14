@@ -10,12 +10,12 @@ edge(2, 3).
 
 getMaxCycle(Cycle) :-
 	assert(cycle([])),
-  getCountRules(Rules),
-  getMaxNode(Nodes),
-  for(1, Nodes, Rules),
-  maxCycle(Cycle),
-  retractall(cycle(_)),
-  write(Cycle), nl, !.
+	getCountRules(Rules),
+	getMaxNode(Nodes),
+	for(1, Nodes, Rules),
+	maxCycle(Cycle),
+	retractall(cycle(_)),
+	write(Cycle), nl, !.
 
 getCountRules(N) :- !,
 	findall(edge(A, B), edge(A, B), L),
@@ -51,8 +51,8 @@ maxFromList([H | T], C) :-
 	maxList(L1, L2, C).	
 
 maxCycle(C) :-
-  findall(cycle(X), cycle(X), L),
-  maxFromList(L, C).
+	findall(cycle(X), cycle(X), L),
+	maxFromList(L, C).
 
 for(I, N, R) :-
 	I = N, !,
@@ -111,8 +111,8 @@ isCycle([H | T], F) :-
 	isCycle(T, F).
 
 tryAddCycle(L) :-
-  notRepeat(L),
-  L = [H | _],
+	notRepeat(L),
+	L = [H | _],
 	isCycle(L, H),
 	assert(cycle(L)).
 tryAddCycle(_).
